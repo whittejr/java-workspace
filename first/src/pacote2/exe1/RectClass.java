@@ -1,4 +1,4 @@
-package pacote2;
+package pacote2.exe1;
 
 public class RectClass
 {

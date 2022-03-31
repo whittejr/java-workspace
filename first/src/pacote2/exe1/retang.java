@@ -1,4 +1,4 @@
-package pacote2;
+package pacote2.exe1;
 
 import java.util.Locale;
 import java.util.Scanner;
