@@ -9,31 +9,28 @@ public class produto
     {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        
-
-        Product product = new Product();
 
         System.out.println("Insira os dados do produto:");
         System.out.printf("Nome: ");
-        product.name = sc.nextLine();
-
+        String name = sc.nextLine();
         System.out.printf("Preço: ");
-        product.price = sc.nextDouble();
-
+        double price = sc.nextDouble();
         System.out.printf("Qtd. no estoque: ");
-        product.qtd = sc.nextInt();
+        int qtd = sc.nextInt();
+
+        Product product = new Product(name, price, qtd);
 
         System.out.println("Product data: " + product);
         
         System.out.printf("Digite a qtd de produtos a serem adicionados no estoque: ");
-        int quantity = sc.nextInt();
-        product.addProduct(quantity);
+        qtd = sc.nextInt();
+        product.addProduct(qtd);
 
         System.out.println("Dados atualizados: " + product);
 
         System.out.printf("Digite a qtd de produtos a serem removidos no estoque: ");
-        quantity = sc.nextInt();
-        product.rmProduct(quantity);
+        qtd = sc.nextInt();
+        product.rmProduct(qtd);
         sc.nextLine();
         
         System.out.println("Dados atualizados: " + product);

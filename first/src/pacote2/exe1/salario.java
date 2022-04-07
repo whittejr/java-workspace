@@ -26,6 +26,8 @@ public class salario
         salary.aumentaSalario(percent);
         System.out.println();
         System.out.println("Dados atualizados: " + salary);
+
+        sc.close();
     }
 
 }
