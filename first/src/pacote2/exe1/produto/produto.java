@@ -1,4 +1,4 @@
-package pacote2;
+package pacote2.exe1.produto;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -15,15 +15,13 @@ public class produto
         String name = sc.nextLine();
         System.out.printf("Preço: ");
         double price = sc.nextDouble();
-        System.out.printf("Qtd. no estoque: ");
-        int qtd = sc.nextInt();
 
-        Product product = new Product(name, price, qtd);
+        Product product = new Product(name, price);
 
         System.out.println("Product data: " + product);
         
         System.out.printf("Digite a qtd de produtos a serem adicionados no estoque: ");
-        qtd = sc.nextInt();
+        int qtd = sc.nextInt();
         product.addProduct(qtd);
 
         System.out.println("Dados atualizados: " + product);

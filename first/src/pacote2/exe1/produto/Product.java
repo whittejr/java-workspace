@@ -1,4 +1,4 @@
-package pacote2;
+package pacote2.exe1.produto;
 
 
 public class Product
@@ -13,6 +13,13 @@ public class Product
         this.price = price;
         this.qtd = qtd;
     }
+
+    public Product(String name, double price)
+    {
+        this.name = name;
+        this.price = price;
+    }
+
 
     public double total()
     {
