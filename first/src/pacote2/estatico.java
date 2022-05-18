@@ -5,25 +5,26 @@ import java.util.Scanner;
 
 public class estatico
 {
-    public static final double PI = 3.14159;
-    public static void main(String[] args)
-    {
-        Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+  public static final double PI = 3.14159;
 
-        Statical stat = new Statical();
+  public static void main(String[] args)
+  {
+    Locale.setDefault(Locale.US);
+    Scanner sc = new Scanner(System.in);
 
-        System.out.printf("Enter radius: ");
-        double radius = sc.nextDouble();
+    Statical stat = new Statical();
 
-        double c = stat.circumference(radius);
+    System.out.printf("Enter radius: ");
+    double radius = sc.nextDouble();
 
-        double v = stat.volume(radius);
+    double c = stat.circumference(radius);
 
-        System.out.printf("Circumference: %.2f: ", c);
-        System.out.printf("\nVolume: %.2f: ", v);
-        System.out.printf("\nPI value: %.2f: ", stat.PI);
+    double v = stat.volume(radius);
 
-        sc.close();
-    }
+    System.out.printf("Circumference: %.2f: ", c);
+    System.out.printf("\nVolume: %.2f: ", v);
+    System.out.printf("\nPI value: %.2f: ", stat.PI);
+
+    sc.close();
+  }
 }
