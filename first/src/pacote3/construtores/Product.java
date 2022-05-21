@@ -1,10 +1,17 @@
-package pacote2.exe1.produto;
+package pacote3.construtores;
 
 public class Product
 {
   public String name;
   public double price;
   public int quantity;
+
+  public Product(String name, double price, int quantity)
+  {
+    this.name = name;
+    this.price = price;
+    this.quantity = quantity;
+  }
 
   public double totalValueInStock()
   {

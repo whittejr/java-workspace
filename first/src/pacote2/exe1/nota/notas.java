@@ -11,8 +11,10 @@ public class notas
     Locale.setDefault(Locale.US);
 
     Aluno aluno = new Aluno();
-
+    
+    System.out.print("Digite seu nome: ");
     aluno.nome = sc.nextLine();
+    System.out.println("Digite as três notas: ");
     aluno.nota1 = sc.nextDouble();
     aluno.nota2 = sc.nextDouble();
     aluno.nota3 = sc.nextDouble();

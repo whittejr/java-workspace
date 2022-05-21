@@ -1,4 +1,4 @@
-package pacote2;
+package pacote2.triangle;
 
 public class Triangle
 {
@@ -10,8 +10,5 @@ public class Triangle
   {
     double p = (a + b + c) / 2.0;
     return Math.sqrt(p * (p - a) * (p - b) * (p - c));
-
-    // double result = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-    // return result;
   }
 }

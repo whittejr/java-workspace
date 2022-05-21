@@ -1,4 +1,4 @@
-package pacote2.exe1;
+package pacote2.exe1.retangle;
 
 public class RectClass
 {
